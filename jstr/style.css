@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(124, 189, 209) , #2a6399);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(45deg, #e2ee3e , #e72424);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.grid {
+    width: 250px;
+    height: 500px;
+    display: flex;
+    
+    flex-wrap: wrap;
+    background-color: #D0ECF0;
+}
+
+.grid div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #BCCDCF;
+}
+
+#stop {
+    border: none;
+}
+
+.header {
+    text-align: center;
+    margin-left: 80px;
+}
+
+.header button {
+    margin-bottom: 50px;
+}
+
+.header .mini_grid {
+    background-color: #D0ECF0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .mini_grid div {
+    height: 25px;
+    width: 25px;
+    border: 1px solid #BCCDCF;
+}

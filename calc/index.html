@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calc</title>
+</head>
+<body>
+    <h1>Депозитный калькулятор</h1>
+    <div class="calculator">
+        <div class="row">
+            <p>Первоначальный депозит</p>
+            <input class="money" name="money" type="number" value="100000" required>
+        </div>
+        <div class="row">
+            <p>Срок вклада</p>
+            <select class="month" name="month">
+                <option value="3">3 (минимум)</option>
+                <option value="6">6 (полгода)</option>
+                <option value="12" selected>12</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="30">30</option>
+            </select>
+        </div>
+        <div class="row">
+            <p>Годовая процентная ставка</p>
+            <input class="percent" name="percent" type="number" value="5">
+        </div>
+
+        <div class="diagram">
+            <div class="column before">
+                <p>Было:</p>
+                <p id="money_before"></p>
+                <div id="money_diagram_before"></div>
+            </div>
+            <div class="column after">
+                <p>Стало:</p>
+                <p id="money_after"></p>
+                <div id="money_diagram_after"></div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
